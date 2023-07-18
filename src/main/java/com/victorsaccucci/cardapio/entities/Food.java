@@ -1,7 +1,13 @@
 package com.victorsaccucci.cardapio.entities;
 
 import jakarta.persistence.*;
+import lombok.*;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(of = "id")
 @Entity
 @Table(name = "foods")
 public class Food {
